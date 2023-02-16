@@ -1,0 +1,377 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+header{
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    padding: 20px 0;
+    color: #9b59b6;
+}
+nav{
+    position: relative;
+    height: 100%;
+}
+nav .nav-item{
+    text-decoration: none;
+    color: #666;
+    display: block;
+    margin: 2px 20px;
+    border-radius: 7px;
+    text-transform: capitalize;
+    transition: .2s linear;
+    position: relative;
+}
+
+nav form{
+    position: absolute;
+    bottom: 100px;
+    width: 300px;
+    padding: 2px 20px;
+}
+nav form .logout-btn{
+    border: none;
+    border-radius: 7px;
+    background-color: #fff;
+    color: #666;
+    display: inline-block;
+    width: 100%;
+    text-align: start;
+}
+nav form .logout-btn:hover{
+    font-weight: 500;
+    background-color: #EDE7F6;
+    color: #9b59b6;
+}
+
+#chevron{
+    position: absolute;
+    right: 0;
+}
+
+nav .nav-item:hover,
+nav .nav-item.active{
+    font-weight: 500;
+    background-color: #EDE7F6;
+    color: #9b59b6;
+}
+
+.sub-nav .sub-nav-item .fa-solid,
+nav .nav-item .fa-solid,
+nav form .logout-btn .fa-solid{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.sub-nav{
+    height: 100px;
+    transition: .2s linear;
+    margin: 0px 20px 0px 48px;
+}
+.sub-nav .sub-nav-item{
+    display: block;
+    /* height: 50px;
+    line-height: 50px; */
+    text-decoration: none;
+    color: #666;
+    border-radius: 7px;
+}
+.sub-nav .sub-nav-item:hover{
+    font-weight: 500;
+    background-color: #EDE7F6;
+    color: #9b59b6;
+}
+.sub-nav.active{
+    height: 0;
+}
+.sub-nav.active .sub-nav-item{
+    display: none;
+}
+
+section{
+    margin-left: 300px;
+    min-height: 90vh;
+}
+
+.input{
+    padding-left: 38px;
+}
+.form-select,
+.input-normal::placeholder,
+.input::placeholder{
+    color: #999;
+}
+.form-select:focus,
+.input-normal:focus,
+.input:focus{
+    border: 1px solid #0d6efd !important;
+    box-shadow: none !important;
+}
+.input-normal:focus::placeholder,
+.input:focus::placeholder{
+    transform: translateX(10px);
+    transition: .2s linear;
+}
+.form-select-1{
+    padding-left: 38px;
+}
+
+.inputGroup{
+    position: relative;
+}
+.inputGroup .input-icon{
+    position: absolute;
+    display: block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #9b59b6;
+}
+.text-light-lg{
+    color: #999;
+    font-weight: 600;
+}
+img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
+}
+.btn-purple{
+    background-color: #9b59b6;
+    color: #fff;
+}
+.btn-purple:hover{
+    background-color: #8e44ad;
+    color: #fff;
+    box-shadow: 0px 0px 10px #9b59b6;
+}
+.btn-outline-purple{
+    border: 1px solid #9b59b6;
+    color: #9b59b6;
+}
+.btn-outline-purple:hover{
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+
+.profile-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 3px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+.profile-btn:hover{
+    border: 1px solid #9b59b6;
+}
+.admin-img,
+.profile .profile-img,
+.profile-btn .profile-btn-img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
+}
+.profile{
+    width: 250px;
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+    z-index: 100;
+    transform: scale(0);
+    transform-origin: top right;
+    transition: .2s linear;
+}
+.profile.active{
+    transform: scale(1);
+}
+.p-img-container{
+    width: 100px;
+    height: 100px;
+    margin: 1rem auto;
+    border: 1px solid #9b59b6;
+    padding: 4px;
+    border-radius: 50%;
+}
+.profile-item{
+    display: block;
+    width: 100%;
+    border: none;
+    color: #9b59b6;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: start;
+    background-color: #fff;
+}
+.profile-item i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.profile-item:hover{
+    background-color: #EDE7F6;
+}
+.text-purple{
+    color: #9b59b6;
+}
+.post-list-img{
+    width: 80px;
+}
+.admin-img-container{
+    width: 50px;
+}
+.tr-1{
+    height: 67px;
+}
+.td-1{
+    /* padding: 0 10px !important; */
+    vertical-align: middle;
+}
+.td-2{
+    padding: 10px !important;
+}
+.action{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    transition: .2s linear;
+}
+.delete-btn{
+    background-color: #f4aca4;
+    color: #c0392b;
+}
+.delete-btn:hover{
+    background-color: #c0392b;
+    color: #fff;
+}
+.edit-btn{
+    background-color: #d5b8e0;
+    color: #8e44ad;
+}
+.edit-btn:hover{
+    background-color: #8e44ad;
+    color: #fff;
+}
+
+footer{
+    margin-left: 300px;
+}
+.footer p{
+    color: #999;
+    font-weight: bold;
+}
+.footer p span{
+    color: #9b59b6;
+}
+.bg-purple{
+    background-color: #EDE7F6;
+}
+
+.label{
+    color: #9b59b6;
+}
+
+.category-image{
+    width: 100%;
+    aspect-ratio: 3/2;
+}
+
+.category-image img{
+    height: 100%;
+    object-fit: contain;
+}
+
+
+#h-header{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#h-header #search-box{
+    position: absolute;
+    bottom: -20px;
+    width: 600px;
+}
+
+#h-section{
+    margin-left: 0px;
+    margin-top: 60px;
+    padding: 0 200px;
+    min-height: 120vh;
+}
+.category-list{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.box .fa-solid{
+    font-size: 2em;
+}
+.box span{
+    position: absolute;
+    bottom: 10px;
+    color: #666;
+}
+
+.user-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.details-image{
+    height: 300px;
+}
+.details-image img{
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
